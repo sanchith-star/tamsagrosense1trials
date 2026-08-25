@@ -3,105 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AgroSense Dynamics</title>
-
+    <title>AgroSense Dynamics | Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-
-    <a href="index.html" class="logo">
-        <span class="logo-icon">A</span>
-        <span>AgroSense <b>Dynamics</b></span>
-    </a>
-
-</nav>
-
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-box">A</div>
+        <span>AgroSense Dynamics</span>
+    </div>
+</header>
 
 <main class="login-page">
 
-    <div class="login-background"></div>
+    <div class="login-card">
 
-    <section class="login-card glass reveal">
-
-        <div class="brand-circle">
-            🌱
-        </div>
-
-        <div class="badge">
-            AGROSENSE DYNAMICS
-        </div>
+        <div class="small-badge">AGROSENSE DYNAMICS</div>
 
         <h1>
-            Smart protection
-            <span class="gradient">for farms.</span>
+            Smart protection<br>
+            <span>for modern farms.</span>
         </h1>
 
-        <p class="muted">
-            Enter your details to explore the AgroSense
-            Dynamics smart agricultural protection system.
+        <p class="login-description">
+            Enter your details to explore the AgroSense Dynamics
+            intelligent agricultural protection system.
         </p>
-
 
         <form id="loginForm">
 
-            <label for="name">
-                Full Name
-            </label>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                required
-            >
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+            </div>
 
+            <div class="input-group">
+                <label>Farm Address</label>
+                <textarea
+                    id="address"
+                    placeholder="Enter your farm address"
+                    required
+                ></textarea>
+            </div>
 
-            <label for="phone">
-                Phone Number
-            </label>
-
-            <input
-                type="tel"
-                id="phone"
-                placeholder="Enter your phone number"
-                required
-            >
-
-
-            <label for="address">
-                Address
-            </label>
-
-            <textarea
-                id="address"
-                placeholder="Enter your complete address"
-                required
-            ></textarea>
-
-
-            <button
-                type="submit"
-                class="btn primary"
-            >
-                Continue
-                <span>→</span>
+            <button type="submit" class="primary-btn">
+                Continue →
             </button>
 
         </form>
 
-    </section>
+    </div>
 
 </main>
 
-
 <footer>
-    © 2026 AgroSense Dynamics. All Rights Reserved.
+    © 2026 AgroSense Dynamics. All rights reserved.
 </footer>
-
 
 <script src="script.js"></script>
 
