@@ -1,163 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        AgroSense Dynamics | Order
-    </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSense | Order</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
+<header class="navbar">
 
-<nav class="navbar">
+    <div class="logo">
+        <div class="logo-box">A</div>
+        <span>AgroSense Dynamics</span>
+    </div>
 
-    <a href="index.html" class="logo">
-        <span class="logo-icon">A</span>
-        <span>AgroSense <b>Dynamics</b></span>
-    </a>
-
-
-    <div class="nav-links">
-
+    <nav>
         <a href="index.html">Home</a>
         <a href="overview.html">Overview</a>
         <a href="peacock.html">Peacock</a>
         <a href="theft.html">Motor Theft</a>
         <a href="snake.html">Snake</a>
-
-        <a href="order.html" class="active">
-            Order
-        </a>
-
+        <a href="order.html" class="active">Order</a>
         <a href="feedback.html">Feedback</a>
+    </nav>
 
-    </div>
+</header>
 
-</nav>
+<main class="order-page">
 
+    <div class="order-card">
 
-<section class="page-header reveal">
+        <div class="small-badge">ORDER AGROSENSE</div>
 
-    <div class="badge">
-        AGROSENSE DYNAMICS
-    </div>
+        <h1>AgroSense Dynamics</h1>
 
-    <h1>
-        Place your
-        <span class="gradient">
-            order.
-        </span>
-    </h1>
-
-    <p>
-        Review your order and submit your details.
-    </p>
-
-</section>
-
-
-<main class="order-layout">
-
-
-    <!-- BILL -->
-
-    <section class="bill glass reveal">
-
-        <div class="badge">
-            ORDER SUMMARY
-        </div>
-
-        <h2>
-            AgroSense Dynamics
-        </h2>
-
-
-        <div class="bill-product">
-
-            <div class="product-icon">
-                🌱
-            </div>
-
-            <div>
-
-                <h3>
-                    Smart Farm Protection System
-                </h3>
-
-                <p>
-                    Complete AgroSense Dynamics system
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="bill-row">
-            <span>AI Detection</span>
-            <strong>Included</strong>
-        </div>
-
-        <div class="bill-row">
-            <span>IoT Control</span>
-            <strong>Included</strong>
-        </div>
-
-        <div class="bill-row">
-            <span>Robotic Rover</span>
-            <strong>Included</strong>
-        </div>
-
-        <div class="bill-row">
-            <span>Solar Powered</span>
-            <strong>Included</strong>
-        </div>
-
-
-        <div class="bill-total">
-
-            <span>
-                TOTAL
-            </span>
-
-            <strong>
-                ₹18,000
-            </strong>
-
-        </div>
-
-    </section>
-
-
-    <!-- ORDER FORM -->
-
-    <section class="login-card glass reveal delay">
-
-        <div class="large-icon">
-            📦
-        </div>
-
-        <div class="badge">
-            CUSTOMER DETAILS
-        </div>
-
-        <h2>
-            Confirm your order
-        </h2>
-
-        <p class="muted">
-            These details were entered on the home page.
+        <p>
+            Complete the form below to place your order.
         </p>
+
+        <div class="price-box">
+
+            <span>Total System Cost</span>
+
+            <strong>₹18,000</strong>
+
+            <small>
+                Complete AgroSense Dynamics system
+            </small>
+
+        </div>
 
 
         <form
@@ -165,131 +58,93 @@
             method="POST"
         >
 
+            <input type="hidden" name="_subject"
+                   value="New AgroSense Dynamics Order">
 
-            <input
-                type="hidden"
-                name="_subject"
-                value="NEW AGROSENSE DYNAMICS ORDER"
-            >
+            <input type="hidden" name="_next"
+                   value="https://sanchith-star.github.io/tamsagrosense1/order-success.html">
 
+            <input type="hidden" name="_captcha"
+                   value="false">
 
-            <input
-                type="hidden"
-                name="_template"
-                value="table"
-            >
+            <input type="hidden"
+                   name="Product"
+                   value="AgroSense Dynamics Agricultural Protection System">
 
-
-            <input
-                type="hidden"
-                name="_captcha"
-                value="true"
-            >
+            <input type="hidden"
+                   name="Total Cost"
+                   value="₹18,000">
 
 
-            <input
-                type="hidden"
-                name="_next"
-                value="https://sanchith-star.github.io/tamsagrosense1/order-success.html"
-            >
+            <div class="input-group">
 
-
-            <label>
-                Full Name
-            </label>
-
-            <input
-                type="text"
-                id="orderName"
-                name="Customer Name"
-                required
-            >
-
-
-            <label>
-                Phone Number
-            </label>
-
-            <input
-                type="tel"
-                id="orderPhone"
-                name="Phone Number"
-                required
-            >
-
-
-            <label>
-                Address
-            </label>
-
-            <textarea
-                id="orderAddress"
-                name="Address"
-                required
-            ></textarea>
-
-
-            <input
-                type="hidden"
-                name="Product"
-                value="AgroSense Dynamics Smart Farm Protection System"
-            >
-
-
-            <input
-                type="hidden"
-                name="Quantity"
-                value="1"
-            >
-
-
-            <input
-                type="hidden"
-                name="Total Amount"
-                value="₹18,000"
-            >
-
-
-            <label class="check">
+                <label>Name</label>
 
                 <input
-                    type="checkbox"
+                    type="text"
+                    name="Customer Name"
+                    id="orderName"
                     required
                 >
 
-                <span>
-                    I confirm that the above details
-                    are correct.
-                </span>
-
-            </label>
+            </div>
 
 
-            <button
-                type="submit"
-                class="btn primary"
-            >
+            <div class="input-group">
 
-                Place Order
+                <label>Phone Number</label>
 
-                <span>
-                    →
-                </span>
+                <input
+                    type="tel"
+                    name="Phone Number"
+                    id="orderPhone"
+                    required
+                >
 
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Farm Address</label>
+
+                <textarea
+                    name="Farm Address"
+                    id="orderAddress"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="bill">
+
+                <div>
+                    <span>AgroSense System</span>
+                    <strong>₹18,000</strong>
+                </div>
+
+                <div class="bill-total">
+                    <span>Total</span>
+                    <strong>₹18,000</strong>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="primary-btn">
+                Place Order →
             </button>
-
 
         </form>
 
-    </section>
+    </div>
 
 </main>
 
-
 <footer>
-    © 2026 AgroSense Dynamics. All Rights Reserved.
+    © 2026 AgroSense Dynamics. All rights reserved.
 </footer>
-
 
 <script src="script.js"></script>
 
